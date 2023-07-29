@@ -96,7 +96,7 @@ function loginn(){
     
         if(isEmail_passExist(em, pass)){
             localStorage.setItem('loginsession', arr[isEmail_passExist(em, pass)-1].name);
-            location.replace(location.hostname +"Login_validation_assigment_js/home.html");
+            location.replace("home.html");
         }
         else{
             reqInputs.classList.remove("d-none");
@@ -109,7 +109,7 @@ function loginn(){
 
 function logout() {
     localStorage.removeItem('loginsession');
-    location.replace(location.hostname +"Login_validation_assigment_js/index.html");
+    location.replace("index.html");
 }
 
 // console.log(location.hostname.replace("signUp.html"));
