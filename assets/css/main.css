@@ -118,17 +118,39 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    flex-direction: column;
 }
 .home-wrapper{
     backdrop-filter: blur(25px);
     background-color: #00000079 !important;
 }
+.btn-wrapper{
+    padding: 10px !important;
+}
 #ss{
     color: rgb(231, 191, 255);
     font-weight: 600;
 }
-
-
+.iframe-btn{
+    left: 25px;
+    top: 25px;
+    width: 380px;
+    position: absolute;
+}
+.secret-btn{
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    width: 250px;
+    height: 100px;
+}
+.secret-btn2{
+    position: absolute;
+    left: 25px;
+    top: 300px;
+    width: 250px;
+    height: 100px;
+}
 
 .sign-bg{
     background-image: url('../images/wallpaperflare.com_wallpaper (2).jpg');

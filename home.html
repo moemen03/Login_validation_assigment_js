@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="icon" href="./assets/images/user-ninja-solid.svg" />
 
@@ -13,19 +13,30 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
 
     <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body class="d-flex justify-content-center align-items-center vh-100 home-pg">
+    <div class="wrapper bg-light home-wrapper">
+      <h1 id="hello" class="neon-purple mt-5 mb-5">Hello, Momo</h1>
+      <button class="btnn mt-3" id="logout" onclick="logout()">Log Out</button>
+    </div>
 
-</head>
-<body class="d-flex justify-content-center align-items-center vh-100 home-pg">
+    <div class="wrapper bg-light btn-wrapper secret-btn">
+      <button class="btnn mt-3" onclick="secret()">
+        secret button 🤯🤯😲😲
+      </button>
+    </div>
 
-  <div class="wrapper bg-light home-wrapper">
-    <h1 id="hello" class="neon-purple mt-5 mb-5">Hello, Momo
-    </h1>
-    <button class="btnn mt-3" id="logout" onclick="logout()">Log Out</button>
-  </div>
+    <div class="wrapper bg-light btn-wrapper secret-btn2 d-none">
+      <button class="btnn mt-3" onclick="close_()">
+        close this peice of art
+      </button>
+    </div>
 
+    <div class="wrapper bg-light btn-wrapper iframe-btn d-none">
+      <img src="./assets/images/cat-drumming.gif" width="100%">
+    </div>
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
-
-</body>
+  </body>
 </html>

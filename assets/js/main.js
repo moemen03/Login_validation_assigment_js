@@ -12,8 +12,6 @@ var hello = document.getElementById('hello'),
     logout_btn = document.getElementById('logout');
 
 
-
-
 // var message
 var invalidUser = document.querySelector(".mm-1");
 var invalidEmail = document.querySelector(".mm-2");
@@ -204,3 +202,18 @@ document.addEventListener("click", function(ex){
         hideModal();
     }
 });
+
+
+
+
+
+function secret(){
+    document.querySelector(".secret-btn").classList.add("d-none");
+    document.querySelector(".secret-btn2").classList.remove("d-none");
+    document.querySelector(".iframe-btn").classList.remove("d-none");
+}
+function close_(){
+    document.querySelector(".secret-btn2").classList.add("d-none");
+    document.querySelector(".iframe-btn").classList.add("d-none");
+    document.querySelector(".secret-btn").classList.remove("d-none");
+}
