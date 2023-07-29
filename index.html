@@ -20,15 +20,20 @@
   <div class="wrapper bg-light">
       <h1>Login</h1>
       <div class="input-box">
-        <input type="text" id="username" placeholder="Email">
-        <i class="fa-solid fa-user"></i>
+        <input type="text" id="email" placeholder="Email" oninput="validate(email_l, email_regx,invalidEmail);">
+        <p class="lead mm-2 mm d-none">invalid e-mail</p>
+        <i class="fa-solid fa-envelope"></i>
       </div>
-      <div class="input-box">
-        <input type="password" id="password" placeholder="Password">
+      <div class="input-box mb-6">
+        <input type="password" id="password" placeholder="Password" oninput="validate(password_l, pass_regx,invalidpassword);">
+        <p class="lead mm-3 mm d-none">at least 6 character or numbers or sympols</p>
         <i class="fa-solid fa-lock"></i>
       </div>
+      <div class="requiredInputs mt-5 text-center d-none">
+        <h6>Required inputs</h6>
+      </div>
 
-      <div class="remember-forget">
+      <div class="remember-forget mt-4">
         <label>
           <input type="checkbox">
           Remember me
@@ -40,7 +45,7 @@
         <h6>Required inputs</h6>
       </div>
       
-      <button class="btnn" id="login" >Login</button>
+      <button class="btnn" id="login" onclick="loginn()">Login</button>
       <div class="register-link">
         <p>Don't have an account? <a href="./signup.html">Register</a></p>
       </div>
