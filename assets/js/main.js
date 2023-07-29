@@ -50,6 +50,12 @@ momenalaa@gmail.com
 `12345467
 */
 
+var username_session = localStorage.getItem('loginsession')
+if (username_session) {
+    hello.innerHTML = "Hello, " + username_session;
+}
+
+
 
 //signUp
 function signUp(){
